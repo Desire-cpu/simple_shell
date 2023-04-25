@@ -41,12 +41,14 @@ char *find_path(void);
 /* helper function for efficient free */
 void free_buffers(char **buf);
 
+/* struct function */
 struct builtin
 {
 	char *env;
 	char *exit;
 } builtin;
 
+/* struct info function */
 struct info
 {
 	int final_exit;
