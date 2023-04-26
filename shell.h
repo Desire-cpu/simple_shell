@@ -69,21 +69,6 @@ int execute(char **args, char **front);
 void free_list(list_t *head);
 char *_itoa(int num);
 
-<<<<<<< HEAD
-/* struct function */
-struct builtin
-{
-	char *env;
-	char *exit;
-} builtin;
-
-/* struct info function */
-struct info
-{
-	int final_exit;
-	int ln_count;
-} info;
-=======
 /* Input Helpers */
 void handle_line(char **line, ssize_t read);
 void variable_replacement(char **args, int *exe_ret);
@@ -104,7 +89,6 @@ char *_strchr(char *s, char c);
 int _strspn(char *s, char *accept);
 int _strcmp(char *s1, char *s2);
 int _strncmp(const char *s1, const char *s2, size_t n);
->>>>>>> e4783fa6cc5814d16b3103777365b33f89015699
 
 /* Builtins */
 int (*get_builtin(char *command))(char **args, char **front);
